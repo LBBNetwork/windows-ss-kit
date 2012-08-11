@@ -1,0 +1,19 @@
+MAJORCOMP=samplesrv
+MINORCOMP=server
+
+TARGETNAME=sampless
+TARGETPATH=obj
+TARGETTYPE=LIBRARY
+
+INCLUDES=..\include;$(DDK_INC_PATH)
+
+SOURCES=apiloop.c   \
+        apis.c		\
+		initialize.c
+
+UMTYPE=console
+UMAPPL=server
+UMLIBS=$(O)\sampless.lib             \
+       $(DDK_LIB_PATH)\ntdll.lib    \
+       ..\libsm\$(O)\libsessman.lib
+COFFBASE=dbgss

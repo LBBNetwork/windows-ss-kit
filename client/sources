@@ -1,0 +1,15 @@
+MAJORCOMP=samplesrv
+MINORCOMP=client
+
+TARGETNAME=smlib
+TARGETPATH=obj
+TARGETTYPE=LIBRARY
+
+INCLUDES=..\include;$(DDK_INC_PATH)
+
+SOURCES=clientapi.c
+
+UMTYPE=console
+UMAPPL=client
+UMLIBS=$(O)\smlib.lib             \
+       $(SDK_LIB_PATH)\ntdll.lib

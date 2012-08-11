@@ -1,0 +1,6 @@
+Please use the Windows DDK to compile, I used
+the Windows Server 2003 SP1 one.
+
+This git repository contains the sample code for the
+SAMPLE subsystem. Execute the server as administrator,
+and use client.exe to connect to the server via NT LPC.
